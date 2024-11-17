@@ -70,6 +70,77 @@
     background-color: #219150; /* Slightly darker shade on hover */
 }
 
+.featured-recipe{
+    background-color: #bde0fe;
+    height: 100vh;
+    width: 100%;
+    padding-top: 2%;
+}
+
+.featured-recipe h2{
+    margin-bottom: 2%;
+    text-align: center;
+    font-family: "Lobster", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5rem; /* Makes the text large */
+    color: #3c0b5c; /* Bright teal color for the title to contrast the pink */
+} 
+
+.feature-recipe-Container{
+    height: 100%;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2%;
+    padding-bottom: 10%;
+}
+
+.recipeCard{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    border-radius: 10px;
+    background-color: #b0d9ff;
+}
+
+.recipeCard img{
+    max-width: 15rem;
+    max-height: 7.5rem;
+    box-sizing: border-box;
+    align-self: center;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.recipeCardContent{
+    align-self: center;
+}
+
+.recipeCardContent{
+}
+
+.recipeCardContent h3{
+    text-align: center;
+    font-family: "Lobster", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: #1A3636; 
+}
+
+.recipeCardContent p{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 /* About Page Container */
 .about-container {
     max-width: 1200px;
@@ -592,7 +663,223 @@
     display: none;
 }
 
+.mainContentRecipe {
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
 
+/* Main Recipe Page Container */
+.recipe-page {
+    width: 100%;
+    max-width: 800px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Recipe Header */
+.recipe-header h1 {
+    font-family: "Lobster", sans-serif;
+    font-size: 2.5rem;
+    color: #2ecc71;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.recipe-description {
+    font-size: 1.1rem;
+    color: #666;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.recipe-tags {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.tag {
+    background-color: #2ecc71;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.author-info {
+    text-align: center;
+    color: #555;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+/* Recipe Image */
+.recipe-image-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.recipe-image {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Recipe Summary */
+.recipe-summary {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    background-color: #f3f3f3;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.summary-item {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Ingredients */
+.recipe-ingredients h2,
+.recipe-instructions h2,
+.recipe-nutrition h2,
+.recipe-reviews h2,
+.related-recipes h2 {
+    font-size: 1.5rem;
+    color: #3498db;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #2ecc71;
+    padding-bottom: 5px;
+}
+
+.recipe-ingredients ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.recipe-ingredients li {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+/* Instructions */
+.recipe-instructions ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.recipe-instructions li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+/* Nutritional Information */
+.recipe-nutrition p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+/* User Reviews */
+.recipe-reviews .review {
+    background-color: #f3f3f3;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.recipe-reviews .review span {
+    color: #f1c40f;
+    font-size: 1.2rem;
+    margin-left: 5px;
+}
+
+.add-review-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #2ecc71;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.add-review-button:hover {
+    background-color: #27ae60;
+}
+
+/* Save & Share Button */
+.save-share {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.save-recipe-button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.save-recipe-button:hover {
+    background-color: #2980b9;
+}
+
+/* Related Recipes */
+.related-recipes {
+    margin-top: 20px;
+}
+
+.related-recipe-card {
+    display: inline-block;
+    width: calc(33% - 10px);
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.related-recipe-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+.related-recipe-card p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.related-recipe-card:hover {
+    transform: scale(1.05);
+}
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
@@ -613,8 +900,16 @@
     .about-container h3 {
         font-size: 1.4rem;
     }
-
     .team {
         grid-template-columns: 1fr;
+    }
+    .recipe-summary {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .related-recipe-card {
+        width: 100%;
+        margin-right: 0;
     }
 }
