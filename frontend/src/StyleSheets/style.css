@@ -1070,34 +1070,4 @@
 }
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
-    .hero-content h1 {
-        font-size: 2.5rem;
-    }
-    .hero-content p {
-        font-size: 1rem;
-    }
-    .about-container {
-        padding: 20px;
-    }
 
-    .about-container h2 {
-        font-size: 2rem;
-    }
-
-    .about-container h3 {
-        font-size: 1.4rem;
-    }
-    .team {
-        grid-template-columns: 1fr;
-    }
-    .recipe-summary {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .related-recipe-card {
-        width: 100%;
-        margin-right: 0;
-    }
-}
