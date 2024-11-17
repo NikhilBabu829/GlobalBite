@@ -102,9 +102,15 @@
 .recipeCard{
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1.5fr;
     border-radius: 10px;
-    background-color: #b0d9ff;
+    background-color: #a2c9ec;
+    justify-self: center;
+    transition: 0.5s;
+}
+
+.recipeCard:hover{
+    background-color: #9dbedb;
 }
 
 .recipeCard img{
@@ -112,6 +118,7 @@
     max-height: 7.5rem;
     box-sizing: border-box;
     align-self: center;
+    justify-self: center;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -122,8 +129,26 @@
     align-self: center;
 }
 
-.recipeCardContent{
+.recipeCardContent p{
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
+
+.recipeCardContent a{
+    color: black;
+    text-decoration: none;
+    border: 1px solid #ffc8dd;
+    padding: 1%;
+    background-color: #ffc8dd;
+    border-radius: 10px;
+    transition: 0.5s ease;
+    transform: scale(5);
+}
+
+.recipeCardContent a:hover{
+    background-color: #e4b3c5;
+}
+
 
 .recipeCardContent h3{
     text-align: center;
@@ -140,6 +165,144 @@
     font-weight: 400;
     font-style: normal;
 }
+
+.random-meal{
+    height: 100vh;
+    background-color: #f7e3af;
+}
+
+.random-meal h2{
+    text-align: center;
+    font-family: "Lobster", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5rem; 
+    color: #3c0b5c;
+}
+
+.random-meal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.random-meal button{
+    margin-top: 10%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #e35053;
+    transition: 0.5s;
+}
+
+.random-meal button:hover{
+    transform: scale(1.2);
+    background-color: #d1494b;
+}
+
+.testimonials{
+    height: 100vh;
+    background-color: #b7e4c7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial{
+    width: 50%;
+    background-color: #ffc8dd;
+    font-size: 1.2rem;
+}
+
+.testimonial figcaption{
+    font-weight: bold;
+}
+
+.testimonial:nth-of-type(2n){
+    text-align: end;
+    background-color: #bde0fe;
+}
+
+.testimonials h2{
+    text-align: center;
+    font-family: "Lobster", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5rem; 
+    color: #3c0b5c;
+}
+
+.sign-up-cta{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #e35053;
+}
+
+.sign-up-cta h2{
+    text-align: center;
+    font-family: "Lobster", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5rem; 
+    color: #ffffff;
+}
+
+.sign-up-cta p{
+    font-size: 1.4rem;
+    color: white;
+}
+
+.sign-up-cta a{
+    color: black;
+    text-decoration: none;
+    border: 2px #fff3b0 solid;
+    background-color: #fff3b0;
+    padding: 0.5% 1% 0.5% 1%;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.sign-up-cta a:hover{
+    transform: scale(1.1);
+    background-color: #e5dba0;
+}
+
+.footerNavigation nav{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2%;
+    background-color: #ffc8dd;
+}
+
+.footer-links {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-links li{
+    list-style-type: none;
+}
+
+.footer-links a{
+    text-decoration: none;
+    color: black;
+    transition: 0.5;
+}
+
+.footer-links a:hover{
+    text-decoration: underline;
+}
+
 
 /* About Page Container */
 .about-container {
