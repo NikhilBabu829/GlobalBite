@@ -1069,5 +1069,35 @@
     padding: 20px;
 }
 
-/* Responsive adjustments */
+
+@media (max-width: 768px) {
+    .featured-recipe{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    .feature-recipe-Container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        height: auto;
+    }
+    .recipeCard{
+        padding: 5%;
+        gap: 20px;
+    }
+    .recipeCardContent a{
+        margin-top: 10%;
+    }
+    .testimonials{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        height: auto;
+        padding: 5%;
+    }
+}
 
